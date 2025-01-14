@@ -1,0 +1,112 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+}
+body{
+   width: 100%;
+   background-image: url("images/bg-desktop.svg");
+   background-position: center;
+   background-size: cover;
+   height: 80vh;
+   background-repeat: no-repeat;
+}
+header h2{
+   color: #110000;
+   font-size: 30px;
+   font-weight: bold;
+   margin-left: 3em;
+}
+.contain{
+   display: flex;
+   padding-top: 4em;  
+   transform: scale(0.9);
+   justify-content: space-between;
+}
+.text-contain{
+   display: block;
+   margin: 25px;
+   padding: 30px;
+}
+.text-contain h2{
+   color: #110000;
+   font-size: 45px;
+   font-weight: 600;
+   line-height: 45px;
+   margin-bottom: 30px;
+}
+.text-contain p{
+   color: #555;
+   line-height: 21px;
+   font-size: 15px;
+   font-weight: 400;
+   margin-bottom: 20px;
+}
+.text-contain a{
+   padding: 12px 43px;
+   background-color: hsl(300, 69%, 71%);
+   color: #110000;
+   text-decoration: none;
+   text-transform: capitalize;
+   text-align: center;
+   border-radius: 25px;
+   font-weight: 500;
+   cursor: pointer;
+}
+.text-contain a:hover{
+   background-color: hsla(300, 69%, 71%, 0.76);
+}
+.lien ion-icon{
+   position: relative;
+   font-size: 25px; 
+   float: inline-end;
+   border: none;
+   margin: 8px;
+}
+.lien{
+   margin-top: -2em;
+   margin-right: 1em;
+}
+@media (max-width: 700px) {
+   body {
+       background-image: url("images/bg-mobile.svg");
+       background-position: center;
+       background-size: cover;
+   }
+   header h2 {
+       font-size: 24px;
+       margin-left: 1em;
+   }
+   .contain {
+       display: block;
+       padding-top: 2em;
+       align-items: center;
+       text-align: center;
+   }
+   .text-contain {
+       margin: 15px;
+       padding: 20px;
+       text-align: center;
+   }
+   .text-contain h2 {
+       font-size: 35px;
+       line-height: 40px;
+   }
+   .text-contain p {
+       line-height: 18px;
+       font-size: 14px;I
+   }
+   .text-contain a {
+       padding: 10px 30px;
+       font-size: 14px;
+   }
+   .lien {
+       margin-top: -1em;
+       margin-right: 0.5em;
+   }
+   .lien ion-icon {
+       font-size: 20px;
+       align-items: center;
+   }
+}
